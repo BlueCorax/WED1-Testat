@@ -1,0 +1,47 @@
+/* reset */
+*  {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* document */
+body {
+	font-size: 1rem;
+	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
+}
+
+
+
+/* images */
+
+
+
+/* text */
+
+
+
+/* lists */
+
+
+
+/* table */
+
+
+
+/* forms */
+
+
+
+#font-size-form {
+	float: right;
+}
+#font-size-form > label, #font-size-form > input, #font-size-form > output {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0; margin: 0;
+}
+

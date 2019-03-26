@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>WED1 - Testat</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="icon"
+      href="./HSR.Template.Exercises/icon-document.png"
+      type="image/png"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./HSR.Template.Exercises/documentStyle.css"
+    />
+
+    <style>
+      video {
+        width: 500px;
+        height: auto;
+      }
+      .alert {
+        background: maroon;
+        color: white;
+        border-radius: 7px;
+        border: 1.5px black solid;
+        padding: 0px 5px;
+      }
+
+      .warning {
+        background: darkorange;
+        color: black;
+        border-radius: 7px;
+        border: 1.5px black solid;
+        padding: 0px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      WED1 - Testat
+    </h1>
+
+    <h2>Ziele des Testates</h2>
+    <p>In der Vorlesung behandelte Aspekte vertiefen und anwenden.</p>
+
+    <h2>Allgemeine Hinweise</h2>
+    <ul>
+      <li>
+        2er Arbeit. Einer- oder Dreiergruppen nur mit Absprache (Sie müssen auf
+        uns zukommen!). Teilen Sie die Arbeiten sinnvoll auf, sodass beide
+        Teampartner ausreichend profitieren.
+      </li>
+      <li>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1n48pVaH1qoPrdcrQUuOUJPU3kK3k1V6vZTs-9xutxPg/edit#gid=0"
+          >Einschreibeliste</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1n48pVaH1qoPrdcrQUuOUJPU3kK3k1V6vZTs-9xutxPg/edit#gid=971143218"
+          >Termin-Liste für die Abgabe</a
+        >
+      </li>
+    </ul>
+
+    <h2>Aufgabenbeschreibung</h2>
+    <p>
+      Ihre Aufgabe ist es, einen Wikipraktika-Artikel über das Thema
+      Taschenrechner zu erstellen. Dafür müssen Sie ein gültiges HTML-Dokument
+      und ein der Visualisierungsvorlage entsprechendes Styling mit CSS
+      erstellen. Zusätzlich müssen Sie die die Logik für den vorgegeben
+      Taschenrechner implementieren und diesen in Ihren Artikel einbinden.
+    </p>
+    <p>Beachten Sie die Kriterien-Liste am Ende.</p>
+    <ul>
+      <li>
+        Visualisierung des Endeergebnis:
+        <a href="./media/visualisierung.pdf" target="_blank"
+          >media/visualisierung.pdf</a
+        >
+      </li>
+      <li>
+        Funktionsdemonstration Taschenrechner:
+        <figure>
+          <video controls width="918" height="956">
+            <source
+              src="./media/wikipraktika-demonstration.ogg"
+              type="video/ogg"
+            />
+            <source
+              src="./media/wikipraktika-demonstration.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="./media/wikipraktika-demonstration.webm"
+              type="video/webm"
+            />
+          </video>
+          <figcaption>
+            <a href="./media/wikipraktika-demonstration.ogg"
+              >media/wikipraktika-demonstration.ogg</a
+            >
+            /
+            <a href="./media/wikipraktika-demonstration.mp4"
+              >media/wikipraktika-demonstration.mp4</a
+            >
+          </figcaption>
+        </figure>
+        <p>
+          <strong>Hinweis</strong>: Die gezeigten Formulare müssen nicht an
+          einen Server angebunden werden. Lassen Sie die Attribute "action" und
+          "method" weg, damit beim Abschicken des Formulars wieder die aktuelle
+          Seite aufgerufen wird.
+        </p>
+      </li>
+    </ul>
+    <h3>Anforderungen an den Taschenrechner</h3>
+    <ul>
+      <li>Zwei Zahlen verrechnen können gemäss Videovorlage</li>
+      <li>
+        Fehlerhafte Eingabe verhindern, korrigieren oder sinnvolle Fehlermeldung
+        darstellen
+      </li>
+      <li>Grundrechenoperationen</li>
+      <li>Weiterrechnen mit Ergebnis</li>
+      <li>Löschen der aktuellen Eingabe (C)</li>
+    </ul>
+
+    <h3>Vorlagen</h3>
+    <ul>
+      <li>
+        Textvorlage:
+        <a href="template/text-vorlage.txt" target="_blank"
+          >template/text-vorlage.txt</a
+        >
+      </li>
+      <li>
+        Anfangsstruktur für das Testat:
+        <a href="template" target="_blank">template/</a> (Darf angepasst werden)
+      </li>
+      <li>
+        HTML &amp; CSS für den Taschenrechner:
+        <a href="template/calculator" target="_blank">template/calculator/</a>
+      </li>
+      <li>Alle benötigten Bilder und Medien: <a href="media/">./media/</a></li>
+    </ul>
+
+    <h3>Vorgehen</h3>
+    <ol>
+      <li>
+        Erstellen Sie den Wikipraktika Artikel anhand der Vorlage und gemäss der
+        Visualisierung.
+      </li>
+      <li>
+        Stylen Sie den Wikipraktika-Artikel gemäss Visualisierung und Video.
+      </li>
+      <li>
+        Für den Taschenrechner gibt es eine fertige Vorlage inklusiv Styling
+        aber ohne Funktionalität im Ordner
+        <a href="template/calculator">template/calculator/</a>. Programmieren
+        Sie den Taschenrechner mit JavaScript. Passen Sie das HTML und das CSS
+        des Taschenrechners <strong>NICHT </strong> an.
+      </li>
+      <li>
+        Binden Sie den Taschenrechner mittels iframe in den Wikipraktika-Artikel
+        ein.
+      </li>
+      <li>
+        <strong>Optional</strong> Programmieren Sie den Schriftgrössen-Wähler:
+        Schreiben Sie dazu ein kleines Script, das den Schriftgrössen Slider
+        überwacht und bei Änderung "style.fontSize" des HTML-Root-Elementes und
+        den Titel des Sliders setzt. Benutzen Sie ein "output"-Element um die
+        Schriftgrösse hinter dem Slider auszugeben. Aktualisieren Sie auch
+        diesen Wert bei Änderung des Sliders.
+      </li>
+    </ol>
+
+    <h3>Kriterien/Anforderungen</h3>
+    <ul>
+      <li>
+        HTML5, CSS und JavaScript Standardkonformität muss erfüllt werden.
+      </li>
+      <li>
+        Überprüfen Sie ihre Arbeit mit dem W3C Validator vor der Abgabe und
+        beheben gefundene Fehler.
+      </li>
+      <li>
+        Ihre Lösung muss in den neusten Versionen von 2 der 4 grossen Browsern
+        (FF, GC, IE, AS) getestet worden sein und ohne Fehler funktionieren.
+      </li>
+    </ul>
+
+    <h4>HTML/Struktur</h4>
+    <ul>
+      <li>
+        Benuten Sie head/body, meta, header, footer, section, main, aside, nav,
+        headings, div, p, form, span, time, small, ul/ol/dl, a, figure,
+        figcaption, img, video, object, iframe, table, address, ... um die
+        Inhalte semantisch zu strukturieren und Medien einzubinden.
+      </li>
+      <li>Das Wikipraktika-Logo soll auf die aktuelle Seite verlinken.</li>
+      <li>Setzen Sie für die Links des Sprachmenüs das "hreflang"-Attribut.</li>
+      <li>Setzen Sie für das Zeitersparnis-Diagramm das "role"-Attribut.</li>
+      <li>
+        Binden Sie das Zeitersparnis-Diagramm so ein, das die Animation korrekt
+        funktioniert.
+      </li>
+      <li>
+        Benutzen Sie das time-Element für sämtliche Zeitangaben. Setzen Sie das
+        "datetime"-Attribut.
+      </li>
+      <li>
+        Das Verwenden von deprecated-Tags und Attributen ist nicht erlaubt.
+      </li>
+      <li>Setzen Sie Metatags anhand der Text-Vorlage.</li>
+      <li>Es darf kein Inhalt von der Textvorlage weggelassen werden!</li>
+      <li>
+        Ergänzen Sie das Video mit den vorhandenen Untertitel. Nutzen Sie dazu
+        "track".
+      </li>
+    </ul>
+
+    <h4>CSS/Style</h4>
+    <ul>
+      <li>
+        Lösen Sie folgendes mit <strong>reinem</strong> CSS (fügen sie keine
+        zusätzlichen Elemente/Text ins HTML ein):
+        <ul>
+          <li>Titelnummerierung</li>
+          <li>
+            Sprachspezifische Flaggen beim Sprachmenü (nutzen Sie "hreflang" und
+            "before")
+          </li>
+        </ul>
+        <strong>Tipp:</strong> Nutzen Sie Selektoren für bereits vorhandene
+        Attribute/Verschachtelungen.
+      </li>
+      <li>
+        Benutzen Sie effiziente Selektoren (z.B. Kindselektor statt
+        Nachfahrenselektor).
+      </li>
+      <li>
+        Nutzen Sie sinnvolle Grössen- und Breitenangaben
+        <ul>
+          <li>
+            Nutzen Sie % damit sich ihre Webseite an die Grösse des
+            Browsersfensters anpasst.
+          </li>
+          <li> 
+            Setzen Sie eine sinnvolle Maximalgrösse für die Schreibmaschine, den
+            Taschenrechner, das Diagramm und das N-Spire-Video.  
+           </li>
+        </ul>
+      </li>
+      <li>Nutzen Sie rem und em sinnvoll</li>
+      <li>
+        Definieren Sie die Höhe des Youtube-Video in Abhängigkeit der
+        Seitenbreite.
+        <div><strong>Tipp:</strong>  calc() &rarr; Höhe = 56.25% der Seitenbreite -
+        Margins. Benutzen Sie den gleichen Mechanismus für den Taschenrechner. </div>         
+      </li>
+      <li>Nutzen Sie nth-child für die Einfärbung der Tabellenzeilen.</li>
+      <li>
+        Definieren Sie für die Formularelemente hover- und active-Styles gemäss
+        Video. 
+        <div><strong>Hinweis</strong>: Der error-Status von Formularelementen muss nicht seperat gestyled werden.</div>
+      </li>
+      <li>
+        Setzen Sie bei den Formularelementen not() ein, um einzelne Elemente von
+        generischeren Styles auszuklammern.
+      </li>
+      <li>
+        Font und sinnvolle Fallbacks sind vorgegeben; es muss kein Font
+        installiert werden.
+      </li>
+    </ul>
+
+    <h4>JavaScript</h4>
+    <ul>
+      <li>
+        Unsicheres JavaScript ("eval", "new function", ...) ist nicht erlaubt!
+      </li>
+      <li>
+        Gruppieren Sie die Funktionen ihres Codes in "Core"
+        (Taschenrechner-Logik) und "UI" (Ansteuerung der Buttons, Handling der
+        Events, Aufruf von Core-Funktionalität, ...). Im Core sind keine
+        DOM-Zugriffe erlaubt. Im UI ist keine Taschenrechnerlogik (z.B.
+        Wertespeicher o.Ä.) erlaubt. Der Core soll Unit-Testbar sein. (Es muss
+        kein Unit-Test geschrieben werden)
+      </li>
+    </ul>
+
+    <h3>Review Vorbereitung</h3>
+    <p>
+      Wir stellen ein
+      <a href="https://metristic.dev.ifs.hsr.ch/">Tool (Metristic)</a> zu
+      verfügung um Ihre Lösung zu validieren. Der erzeugte Report von Metristic
+      müssen Sie als PDF oder ausgedruckt ans Review mitnehmen.
+    </p>
+    <p>
+      Wichtig: Mit <span class="alert">Errors</span> und
+      <span class="warning">Warnings</span> im Report sind Sie nicht zum Review
+      zugelassen. Falls Sie der Meinung sind das die
+      <span class="alert">Errors</span> /
+      <span class="warning">Warnings</span> korrekt sind, besprechen Sie diese
+      mit dem Übungsbetreuer. Die andern Warnstufen sollten minimiert werden.
+    </p>
+    <p>Hinweise</p>
+    <ul>
+      <li>Die Struktur von der Vorlage darf nicht verändert werden.</li>
+      <li>Ohne Ordner 'media'.</li>
+      <li>
+        Falls ein Hinweis von metristic nicht verständlich oder "falsch"
+        scheint, melden Sie sich frühzeitig.
+      </li>
+    </ul>
+    <p>Folgende Punkte werden automatisch validiert:</p>
+    <ul>
+      <li>HTML Qualität</li>
+      <li>CSS Qualität</li>
+      <li>JS Qualität</li>
+      <li>Die meisten Anforderungen</li>
+    </ul>
+
+    <h3>Review & Abgabe</h3>
+    <p>
+      Sie werden als Gruppe ihre Lösung während der Übungsstunde dem
+      Übungsleiter präsentieren. Zusätzlich schicken Sie dem Reviewer ihre
+      Lösung als zip per E-Mail (<strong>OHNE</strong> den Ordner "media"!).
+    </p>
+
+    <h3>Nachkorrektur</h3>
+    <p>
+      Jede Gruppe hat die Möglichkeit für eine Nachkorrektur. Diese erfolgt eine
+      Woche später. Eine zweite Nachkorrektur wird nicht akzeptiert.
+      Nachkorrekturen müssen entweder nochmals präsentiert werden, oder
+      benötigen nur eine erneute Abgabe der korrigierten Lösung per Mail an den
+      Betreuer. Der Betreuer entscheidet was nötig ist.
+    </p>
+
+    <h2>Termine</h2>
+    <dl>
+      <dt>Einschreiben bis</dt>
+      <dd>FR 30. April</dd>
+      <dt>Testatabgabe / Demonstration</dt>
+      <dd>DI 21.05, MI 22.05 und FR 24.05</dd>
+      <dd>Korrekturen eine Woche später erneut vorführen.</dd>
+    </dl>
+  </body>
+</html>

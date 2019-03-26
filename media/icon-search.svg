@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version="1.2" width="50mm" height="50mm" viewBox="0 0 5000 5000" xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<path fill="none" stroke="white" stroke-width="600" stroke-linejoin="round"
+			  d="M 3346,300 C 4114,300 4700,886 4700,1654 4700,2422 4114,3008 3346,3008 2578,3008 1992,2422 1992,1654 1992,886 2578,300 3346,300 Z"/>
+		<path fill="none" stroke="white" stroke-width="500" stroke-linejoin="round" stroke-linecap="round"
+			  d="M 2300,2700 L 269,4731"/>
+	</g>
+</svg>

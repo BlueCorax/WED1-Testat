@@ -1,0 +1,109 @@
+/* reset */
+*  {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 5vw;
+}
+
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* document */
+body {
+	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
+	/* Background source:
+	 * http://www.texturex.com/Leather-Textures/black+leather+texture+large+close+up+grain+material+dark+fabric+stock+photo.jpg.php
+	 * Free offered by Free Leather Textures */
+	background: url('../../../media/black-leather-texture.jpg');
+}
+
+.display {
+	border: 0.2rem solid gray;
+	border-radius: 0.5rem;
+	background: black;
+	padding: 0.5rem;
+	width: 100%;
+	display: block;
+}
+.display > output {
+	display: block;
+	height: 1.5rem;
+	margin: 0;
+	color: aqua;
+}
+
+form {
+	width: 100%;
+	padding: 0.5rem;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	font-size: 0;
+}
+fieldset > button {
+	width: 20%;
+	margin: 3.3%;
+	padding: 2vw;
+}
+fieldset > button:nth-child(4n) {
+	margin-right: 0;
+}
+fieldset > button:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+button {
+	box-shadow: 0 0 0.5rem black;
+	border: none;
+	border-radius: 0.5rem;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+output {
+	font-size: 1rem;
+}
+
+
+button.number, button.command {
+	background: white;
+}
+button.number:active, button.command:active {
+	background: rgb(230, 230, 230);
+	box-shadow: inset 0 0 0.5rem black;
+}
+button.operator {
+	box-shadow: 0 0 0.5rem rgb(80,80, 80);
+	background: black;
+	color: white;
+}
+button.operator:active {
+	background: rgb(60, 60, 60);
+	box-shadow: inset 0 0 0.5rem black;
+}
+
+#key-c {
+	background: red;
+	color: white;
+}
+#key-c:active {
+	background: darkred;
+}
+button:focus {
+	box-shadow: 0 0 0.5rem deepskyblue;
+}
