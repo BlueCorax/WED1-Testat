@@ -21,14 +21,18 @@ body {
 
 /* text */
 
+body > header {
+	background-color: #0060A0;
+}
+
 
 
 /* lists */
 
 nav > ul {
-	border: medium solid #1B70A9;
-	padding: 10px 7px;
-	margin: 5px 10px;
+	border: medium solid #0060A0;
+	padding: 0.6em 0.5em;
+	margin: 0.5em 0.5em;
 	background-color: #F6F6F6;
 }
 
@@ -37,11 +41,11 @@ nav li {
 }
 
 nav li a {
-	color: #1B70A9;
+	color: #0060A0;
 }
 
 nav li li {
-	margin-left: 20px;
+	margin-left: 1em;
 }
 
 nav li .flag::before {
