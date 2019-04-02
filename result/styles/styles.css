@@ -15,7 +15,6 @@ body {
 }
 
 
-
 /* images */
 
 
@@ -26,8 +25,19 @@ body {
 
 /* lists */
 
+nav > ul {
+	border: medium solid #1B70A9;
+	padding: 10px 7px;
+	margin: 5px 10px;
+	background-color: #F6F6F6;
+}
+
 nav li {
 	list-style: none;
+}
+
+nav li a {
+	color: #1B70A9;
 }
 
 nav li li {
