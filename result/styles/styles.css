@@ -30,14 +30,27 @@ nav li {
 	list-style: none;
 }
 
-nav li .flag_it {
-	list-style-image: url("../media/flag-it.svg"); 
+nav li li {
+	margin-left: 20px;
 }
-nav li .flag_fr {
-	list-style-image: url("../media/flag-fr.svg"); 
+
+nav li .flag::before {
+	content: '';
+	display: inline-block;
+	background-position: center;
+	height: 13px;
+	width: 15px;
+	background-size: contain;
 }
-nav li .flag_en {
-	list-style-image: url("../media/flag-en.svg"); 
+
+#flag_it::before{
+	background-image: url("../media/flag-it.svg");
+}
+#flag_fr::before {
+	background-image: url("../media/flag-fr.svg");
+}
+#flag_en::before {
+	background-image: url("../media/flag-en.svg");
 }
 
 
