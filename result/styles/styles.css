@@ -26,6 +26,20 @@ body {
 
 /* lists */
 
+nav li {
+	list-style: none;
+}
+
+nav li .flag_it {
+	list-style-image: url("../media/flag-it.svg"); 
+}
+nav li .flag_fr {
+	list-style-image: url("../media/flag-fr.svg"); 
+}
+nav li .flag_en {
+	list-style-image: url("../media/flag-en.svg"); 
+}
+
 
 
 /* table */
