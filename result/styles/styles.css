@@ -84,6 +84,14 @@ dd::before {
 
 /* table */
 
+thead th {
+	background-color: #0060A0;
+}
+
+tbody th{
+	font-weight: bold;
+	text-align: left;
+}
 
 
 /* forms */
