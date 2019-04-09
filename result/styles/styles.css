@@ -34,6 +34,11 @@ body {
 	width: 100px;
 }
 
+iframe{
+	width: 100%;
+	height: calc(56.25vw - 2rem);
+    border: none;
+}
 
 /* text */
 h1{
@@ -88,7 +93,7 @@ article footer time {
 aside {
 	margin: 1em 1em 1em 0em;
 	float: left;
-	width: 30%;
+	width: 200px;
 	word-wrap: break-word;
 }
 
