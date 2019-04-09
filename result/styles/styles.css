@@ -80,6 +80,17 @@ article footer time {
 	float: right;
 }
 
+aside {
+	margin: 1em 1em 1em 0em;
+	float: left;
+	width: 30%;
+	word-wrap: break-word;
+}
+
+aside img {
+	width: 100%;
+}
+
 figcaption {
 	padding: .5em 0em;
 	color: grey;
