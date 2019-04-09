@@ -66,6 +66,45 @@ h4{
 	margin: 0.5rem 0 0.5rem 0;
 }
 
+small{
+	font-size: 0.8em;
+}
+
+article footer {
+	font-style: italic;
+	border-style: dotted;
+	margin: 1em 0em;
+	width: 100%;
+}
+article footer time {
+	float: right;
+}
+
+figcaption {
+	padding: .5em 0em;
+	color: grey;
+	font-size: 0.8em;
+}
+
+figcaption a{
+	color: black;
+}
+
+body > footer {
+	color: white;
+	background-color: #0060A0;
+	padding: 0.5em 0.5em;
+	font-weight: initial;
+}
+
+body > footer address {
+	line-height: 1.7em;
+}
+
+body > footer a{
+	color: inherit;
+	font-style: normal;
+}
 
 /* lists */
 
@@ -113,7 +152,7 @@ dt {
 }
 
 dd {
-	margin-left: 0.7em;
+	margin-left: 1em;
 }
 
 dd::before {
@@ -123,6 +162,11 @@ dd::before {
 	padding-right: 0.2em;
 }
 
+ol {
+	margin: 0.5em 0em;
+	list-style-position: inside;
+}
+
 /* table */
 
 table {
@@ -130,7 +174,6 @@ table {
 	text-align: center;
 	border-collapse: collapse;
 }
-
 
 thead th {
 	color: white;
