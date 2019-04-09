@@ -71,6 +71,10 @@ small{
 	font-size: 0.8em;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 article{
 	margin-left: 1em;
 }
@@ -92,7 +96,7 @@ aside {
 	word-wrap: break-word;
 }
 
-aside img {
+img {
 	width: 100%;
 }
 
@@ -137,6 +141,7 @@ nav li {
 
 nav li a {
 	color: #0060A0;
+	
 }
 
 nav li li {
