@@ -133,7 +133,7 @@
 					Vor allem Hewlett Packard und Texas Instruments entwickelten ab <time datetime="1974">1974</time> auch programmierbare
 					Taschenrechner.
 				</p>
-				<h3>Numerische Genauigkeit:</h3>
+				<h4>Numerische Genauigkeit</h4>
 				<p>
 					Auch wenn heutige Taschenrechner im Regelfall kaum Programmfehler bei einfachen Berechnungen
 					aufweisen, lassen sich zwischen verschiedenen Taschenrechnermodellen unterschiedliche
@@ -258,8 +258,13 @@
 				<header>
 					<h3>iPhone calculator tricks</h3>
 				</header>
-				https://www.youtube.com/embed/a7rcVgb41-0
-				iPhone Calculator Tricks  on YouTube: youtube.com/watch?v=a7rcVgb41-0 (https://www.youtube.com/watch?v=a7rcVgb41-0)
+				<figure>
+					<iframe src="https://www.youtube.com/embed/a7rcVgb41-0" role="application" allowfullscreen>
+					</iframe>
+					<figcaption>iPhone Calculator Tricks on YouTube:
+						<a href="https://www.youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a>
+					</figcaption>
+				</figure>
 				<footer>
 				Zuletzt geändert von Paul Sarner
 				<time datetime="2016-02-10 18:38:00">Donnerstag, 10. Februar 2016, 18:38</time>
@@ -290,63 +295,80 @@
 				<header>
 					<h3>Taschenrechner suchen nach Modell</h3>
 				</header>
-				[                     ]
-				Mexico Instrument TI 30
-				Mexico Instrument TI 32
-				Mexico Instrument D*D
-				Casino UX5
-				Casino TZZ
-				Casino Basic
-				HG Calc++
-				HG Productive
-				HG GO-ON
-
-				[search]
+				<form name="search" method="post" class="search-form">
+					<datalist id="search-models">
+						<option value="Mexico Instrument TI 30">Mexico Instrument TI 30</option>
+						<option value="Mexico Instrument TI 32">Mexico Instrument TI 32</option>
+						<option value="Mexico Instrument D*D">Mexico Instrument D*D</option>
+						<option value="Casino UX5">Casino UX5</option>
+						<option value="Casino TZZ">Casino TZZ</option>
+						<option value="Casino Basic">Casino Basic</option>
+						<option value="HG Calc++">HG Calc++</option>
+						<option value="HG Productive">HG Productive</option>
+						<option value="HG GO-ON">HG GO-ON</option>
+					</datalist>
+					<input type="search" name="search-query" list="search-models" id="search-query"
+							aria-label="search query"/>
+					<button type="submit">Search</button>
+				</form>
 			</article>
 			<article>
 				<header>
-					<h3>Neuen Autor registrieren</h3>
+					<h2>Neuen Autor registrieren</h2>
 				</header>
-				--Autor--
-				Herr X	Frau O
-				Name 			[          ]
-				E-Mail			[          ]
-				Webseite		[          ]
-				Geburtsdatum	[          ]
-				Nationalität	[ -- Wählen -- v]
-				Switzerland
-				Deutschland
-				Frankreich
-				Italien
-				Österreich
-				Profiltext		[          ]
-				Profilbilder	[ Browse ]
-
-				--Rechtliches--
-				[ ] Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
-				[ ] Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
-				[ ] Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
-				eingereichte Medien Bilder nicht manipuliert wurden
-
-				[Account anlegen]
-				[Eingaben zurücksetzen]
+				<form name="register-new-autor">
+					<fieldset id="autor">
+						<legend>Autor</legend>
+						<p>
+							<label>Herr <input type="radio" name="gender" value="male" checked></label>
+							<label>Frau <input type="radio" name="gender" value="female"></label>
+						</p>
+						<label>Name<input type="text" name="name" required></label>
+           				<label>E-Mail<input type="email" name="mail" required></label>
+            			<label>Webseite<input type="url" name="website"></label>
+						<label>Geburtsdatum<input type="datetime-local" name="birthday" required></label>
+						<label>Nationalität
+							<select name="nationality" size="1" required>
+								<option value="" selected>--Wählen--</option>
+								<option value="CH">Switzerland</option>
+								<option value="DE">Deutschland</option>
+								<option value="FR">Frankreich</option>
+								<option value="IT">Italien</option>
+								<option value="AU">Österreich</option>
+							</select>
+						</label>
+						<label>Profiltext<textarea name="text" rows="10" cols="100"></textarea></label>
+            			<label>Profilbilder<input type="file" name="images"/></label>
+					</fieldset>
+					<fieldset id="policy">
+						<legend>Rechtliches</legend>
+						<label><input type="checkbox" required>
+							Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin.</label>
+						<label><input type="checkbox" required>
+							Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin.</label>
+						<label><input type="checkbox" required>
+							Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit
+							entsprechen und eingereichte Medien Bilder nicht manipuliert wurden.</label>
+					</fieldset>
+					<button type="submit">Account anlegen</button>
+					<button type="reset">Eingaben zurücksetzen</button>
+				</form>
 			</article>
-
 		</main>
-			<footer>
-				<address>
-				Bahnhofstrasse 42,
-				8000 Zürich</br>
-				<a href="tel:055 444 33 22">055 444 33 22</a>
-				<a href="mailto:info@wikipraktika.com">info@wikipraktika.com</a>
+		<!-- TODO -->
+			<footer id="body-footer">
+				<address>Bahnhofstrasse 42, 8000 Zürich	
+					<p>
+						<a href="tel:055 444 33 22">055 444 33 22</a>
+						<a href="mailto:info@wikipraktika.com">info@wikipraktika.com</a>
+					</p>
 				</address>
 				<small>
-				Alle Inhalte von Wikipraktika stehen unter der <a href="http://creativecommons.org/licenses/by-sa/4.0/" hreflang="en">|https://i.creativecommons.org/l/by-sa/4.0/88x31.png|</a> 
-				<a href="http://creativecommons.org/licenses/by-sa/4.0/" hreflang="en">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+				Alle Inhalte von <i>Wikipraktika</i> stehen unter der <a href="http://creativecommons.org/licenses/by-sa/4.0/" hreflang="en">
+					<img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Logo Creativecommons">
+				Creative Commons Attribution-ShareAlike 4.0 International License</a>
 				 und dürfen nur mit Nennung des Autors weiterverwendet werden.
 				</small>
 			</footer>
-
-		<!-- TODO -->
 	</body>
 </html>

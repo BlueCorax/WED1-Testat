@@ -28,10 +28,6 @@ body {
 	height: 5rem;
 }
 
-#body-footer{
-
-}
-
 /* images */
 #body-header > a > img{
 	height: 100px;
@@ -229,3 +225,59 @@ tbody td {
 	padding: 0; margin: 0;
 }
 
+.search-form input[type=search] {
+	width: 15rem;
+	margin-left: 0.5rem;
+	height: 2rem;
+}
+
+.search-form > button {
+    background-image: url("../../media/icon-search.svg");
+    background-size: 1rem 1rem;
+	background-repeat: no-repeat;
+	background-position: 0.5rem 0.5rem;
+    padding-left: 2rem;
+}
+
+fieldset{
+	border: solid lightgrey thin;
+	border-radius: 1%;
+	padding: 0.5rem
+}
+
+fieldset label, fieldset > input, fieldset textarea{
+	display: block;
+}
+
+#autor input:not([type="radio"]), textarea, select{
+	width: 100%;
+}
+
+label{
+	color: grey;
+	margin-top:  1.5rem;
+}
+
+input:not([type="file"]):not([type="radio"]):not([type="checkbox"]), select, textarea{
+	background: rgb(235, 235, 235);
+	border-color: transparent;
+	border-bottom: solid black thin;
+}
+
+#autor > label > input, #autor select{
+	height: 2rem;
+}
+
+button {
+	font-size: 1rem;
+    background: #0060A0;
+    color: white;
+    border-radius: 0.2rem;
+    height: 2rem;
+	padding: 0 1rem;
+	margin: 1rem 0;
+	border-color: transparent;
+	-moz-box-shadow: 0 0 5px #000000;
+    -webkit-box-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 5px #000000;
+}
