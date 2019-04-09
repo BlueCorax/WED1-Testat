@@ -12,19 +12,59 @@
 body {
 	font-size: 1rem;
 	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
+	margin: 3rem;
+	counter-reset: h3;
 }
 
+#body-header, #body-footer {
+	/*width: 100%; */
+	background: #0060A0;
+	color: white;
+}
+
+#body-header{
+	padding: 0.5em;
+	display: flex;
+	height: 5rem;
+}
+
+#body-footer{
+
+}
 
 /* images */
-
+#body-header > a > img{
+	height: 100px;
+	width: 100px;
+}
 
 
 /* text */
-
-body > header {
-	background-color: #0060A0;
+h1{
+	padding: 0.5rem 0 0 0.5rem;
+	font-size: 3rem;
 }
 
+h2{
+	margin: 2rem 0 0 0;
+	font-size: 2em;
+}
+
+h3:before{
+	counter-increment: h3;
+	content: counter(h3) " ";
+}
+
+h3{
+	margin: 1rem 0 0.5rem 0; 
+	font-size: 1.5em;
+	border-bottom: solid black thin;
+}
+
+h4{
+	font-size: 1rem;
+	margin: 0.5rem 0 0.5rem 0;
+}
 
 
 /* lists */
@@ -95,8 +135,6 @@ tbody th{
 
 
 /* forms */
-
-
 
 #font-size-form {
 	float: right;
