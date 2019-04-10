@@ -152,7 +152,7 @@
 					Taschenrechnern voneinander abweichende Ergebnisse.
 				</p>
 				<p>
-					Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner" hreflang="de">de.wikipedia.org/wiki/Taschenrechner</a>
+					<small>Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner" hreflang="de">de.wikipedia.org/wiki/Taschenrechner</a></small>
 				</p>
 			</article>
 			<article>
@@ -167,18 +167,20 @@
 					<h3>Bedienung des TI-Nspire CX CAS</h3>
 				</header>
 				<figure>
-					../media/TI-Nspire CX CAS 3D Model.mp4
-					../media/TI-Nspire CX CAS 3D Model.webm
-					Thumbnail: ../media/ti-nspire-cx-cas.png
-					Untertitel English: ../media/ti-nspire-subtitles.en.vtt
+					<video controls poster="../media/ti-nspire-cx-cas.png">
+						<source type="video/mp4" src="../media/TI-Nspire CX CAS 3D Model.mp4" />
+						<source type="video/webm" src="../media/TI-Nspire CX CAS 3D Model.webm" />
+						<track default label="Untertitel English" src="../media/ti-nspire-subtitles.en.vtt" srclan="en" />
+					</video>
 					<figcaption>
 						TI-Nspire CX CAS Demonstration
 					</figcaption>
-
 				</figure>
+				<small>
 					Von TheConnerdy, <a href="http://creativecommons.org/licenses/by-sa/3.0" hreflang="en">CC BY-SA 3.0</a>,
 					<a href="https://www.youtube.com/watch?v=6gKkz4VkSgk" hreflang="en">via Youtube</a>
-				<footer>
+				</small>
+					<footer>
 					Zuletzt geändert von Philipp Graf
 					<time datetime="2016-02-11 12:45:00">Donnerstag, 11. Februar 2016, 12:45</time>
 				</footer>
@@ -255,7 +257,7 @@
 -->
 				</table>
 				<figure class="center">
-					<img src="../media/zeitgewinn.svg" alt="Zeitgewinn" width="800px" height="500px">
+					<object data="../media/zeitgewinn.svg" width="800px" height="500px" role="application" type="image/svg+xml"></object>
 				</figure>
 				<footer>
 				Zuletzt geändert von Leandra Gross
@@ -338,7 +340,7 @@
 						<label>Name<input type="text" name="name" required></label>
            				<label>E-Mail<input type="email" name="mail" required></label>
             			<label>Webseite<input type="url" name="website"></label>
-						<label>Geburtsdatum<input type="datetime-local" name="birthday" required></label>
+						<label>Geburtsdatum<input type="date" name="birthday" required></label>
 						<label>Nationalität
 							<select name="nationality" size="1" required>
 								<option value="" selected>--Wählen--</option>
