@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "URW Gothic L";
-	src: url('urw_gothic_l_book.ttf');
+	src: url('../media/urw_gothic_l_book.ttf');
 }
 
 /* reset */
@@ -39,9 +39,19 @@ body {
 	width: 100px;
 }
 
+video {
+    width: 100%;
+    height: auto;
+}
+
+object{
+	width: 50%;
+	height: auto;
+}
+
 iframe{
 	width: 100%;
-	height: calc(56.25vw - 2rem);
+	height: calc(56.25vw - 3rem);
     border: none;
 }
 
@@ -202,6 +212,7 @@ table {
 	line-height: 2em;
 	text-align: center;
 	border-collapse: collapse;
+	width: 100%;
 }
 
 thead th {
@@ -286,7 +297,10 @@ input:not([type="file"]):not([type="radio"]):not([type="checkbox"]), select, tex
 	height: 2rem;
 }
 
-input:not([type="file"]):not([type="radio"]):not([type="checkbox"]):focus, select:focus, textarea:focus{
+input:not([type="file"]):not([type="radio"]):not([type="checkbox"]):focus, 
+input:not([type="file"]):not([type="radio"]):not([type="checkbox"]):active,
+input:not([type="file"]):not([type="radio"]):not([type="checkbox"]):hover,
+select:focus, select:active, select:hover, textarea:focus,textarea:active,textarea:hover{
 	color: #0060A0;
 	border-bottom: solid #0060A0 thin;
 }
