@@ -3,78 +3,102 @@
  */
 class Calculator {
     constructor(initialText) {
-        this.input = "";
-        this.output = "initialText";
+        this.reset();
+    }
+
+    reset(){
         this.operand1 = "";
         this.operand2 = "";
         this.operator = "";
     }
 
-    setInput(input){
-        this.input = input;
+    error(){
+        this.operator = "";
+        this.operand2 = "Invalid calculation";
     }
 
-    getInput(){
-        return this.input;
+    numberTyped(number){
+        if(isNaN(this.operand1) || this.operand1 == ""){
+            this.operand1 = number;
+        }else{
+            this.operand1 = parseInt(this.operand1)*10 + number;
+        }
     }
 
-    setOutput(output){
-        this.output = output;
+    operatorTyped(op){
+        if(this.operator == ""){
+            this.operand2 = this.operand1;
+            this.operand1 = "";
+        }
+        this.operator = op;
     }
 
-    getOutput(){
-        return this.output;
+    commandTyped(key){
+        switch(key){
+            case "key-c":
+                this.reset();
+                break;
+            case "key-=":
+                this.calculate();
+                break;                
+            default:
+            break;
+        }
     }
+
 
     calculate(){
+        if(this.operand1 == "" || this.operand2 == "" || this.operator == ""){
+            this.error();
+            return;
+        }
         switch (this.operator) {
             case '+':
-                
+                this.operand1 = this.operand2 + this.operand1;
                 break;
             case '-':
-                
+                this.operand1 = this.operand2 - this.operand1;
                 break;
             case '*':
-                
+                this.operand1 = this.operand2 * this.operand1;
                 break;
             case '/':
-                
+                if(this.operand1 == 0){
+                    this.error();
+                    return;
+                }
+                this.operand1 = this.operand2 / this.operand1;
                 break;
             default:
                 break;
         }
+        this.operand2 = "";
+        this.operator = "";
     }
-
-    checkInput(input){
-
-    }
-
-    add(left, right){
-        return left + right;
-    }
-
-    remove(left, right){
-        return left - right;
-    }
-
-    divide(left, right){
-        return left / right;
-    } 
-    
-    multiply(left, right){
-        return left * right;
-    }
-
 }
-
-
 /**
  * UI
  */
 window.addEventListener('DOMContentLoaded', function() {
-    const calculator = new Calculator("Hallo Welt");
-    calculator.displayInput();
-    calculator.displayOutput();
+    const calculator = new Calculator();
+    document.querySelector("#output").innerHTML = "Welcome";
+    document.querySelector("form").addEventListener("click", () => {
+        switch(event.target.className){
+            case "number":
+                calculator.numberTyped(parseInt(event.target.value));
+                break;
+            case "operator":
+                calculator.operatorTyped(event.target.value);
+                break;
+            case "command":
+                calculator.commandTyped(event.target.id);
+                break;
+            default:
+                break;
+        }
+        document.querySelector("#output").innerHTML = calculator.operand2 + " " + calculator.operator;
+        document.querySelector("#input").innerHTML = calculator.operand1;
+    });
 });
 
 
