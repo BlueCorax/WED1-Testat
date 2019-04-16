@@ -49,10 +49,15 @@ object{
 	height: auto;
 }
 
-iframe{
+.youtube{
 	width: 100%;
 	height: calc(56.25vw - 3rem);
     border: none;
+}
+
+.calculator{
+	width: 50%;
+	height: calc(56.25vw - 3rem);
 }
 
 /* text */
