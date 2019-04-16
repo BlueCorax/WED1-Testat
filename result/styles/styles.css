@@ -15,9 +15,9 @@
 
 /* document */
 body {
-	font-size: 1rem;
+	font-size: 1em;
 	font-family: "URW Gothic L";
-	margin: 3rem;
+	margin: 3em;
 	counter-reset: h3;
 }
 
@@ -30,7 +30,7 @@ body {
 #body-header{
 	padding: 0.5em;
 	display: flex;
-	height: 5rem;
+	height: 5em;
 }
 
 /* images */
@@ -44,31 +44,25 @@ video {
     height: auto;
 }
 
-object{
-	width: 50%;
-	height: auto;
-}
-
 .youtube{
 	width: 100%;
-	height: calc(56.25vw - 3rem);
+	height: calc(56.25vw - 3em);
     border: none;
 }
 
 .calculator{
 	width: 50%;
-	height: calc(56.25vw - 3rem);
+	height: calc(56.25vw - 3em);
 }
 
 /* text */
 h1{
-	padding: 0.5rem 0 0 0.5rem;
-	font-size: 3rem;
+	padding: 0.5em 0 0 0.5em;
+	font-size: 3em;
 }
 
 h2{
-
-	margin: 2rem 0 0 1rem;
+	margin: 1em 0 0 0.5em;
 	font-size: 2em;
 }
 
@@ -78,17 +72,15 @@ h3:before{
 }
 
 h3{
-	margin: 1rem 0 0.5rem 0; 
+	margin: 1em 0 0.5em 0; 
 	font-size: 1.5em;
 	border-bottom: solid black thin;
 }
 
 h4{
-	font-size: 1rem;
-	margin: 0.5rem 0 0.5rem 0;
+	font-size: 1em;
+	margin: 0.5em 0 0.5em 0;
 }
-
-
 
 a:hover {
 	text-decoration: none;
@@ -115,8 +107,18 @@ article footer time {
 aside {
 	margin: 1em 1em 1em 0em;
 	float: left;
-	width: 200px;
+	width: 15%;
 	word-wrap: break-word;
+}
+
+aside img{
+	width: 100%;
+	height: auto;
+}
+
+.center{
+	margin: auto;
+	width: 50%;
 }
 
 figcaption {
@@ -225,7 +227,7 @@ thead th {
 	background-color: #0060A0;
 	border: solid;
 	border-color: black;
-	border-width: 0.2rem 0em 0.2rem 0em;
+	border-width: 0.2em 0em 0.2em 0em;
 }
 
 tbody th{
@@ -259,23 +261,23 @@ tbody td {
 }
 
 .search-form input[type=search] {
-	width: 15rem;
-	margin-left: 0.5rem;
-	height: 2rem;
+	width: 15em;
+	margin-left: 0.5em;
+	height: 2em;
 }
 
 .search-form > button {
     background-image: url("../../media/icon-search.svg");
-    background-size: 1rem 1rem;
+    background-size: 1em 1em;
 	background-repeat: no-repeat;
-	background-position: 0.5rem 0.5rem;
-    padding-left: 2rem;
+	background-position: 0.5em 0.5em;
+    padding-left: 2em;
 }
 
 fieldset{
 	border: solid lightgrey thin;
 	border-radius: 1%;
-	padding: 0.5rem
+	padding: 0.5em
 }
 
 fieldset label, fieldset > input, fieldset textarea{
@@ -288,18 +290,18 @@ fieldset label, fieldset > input, fieldset textarea{
 
 label{
 	color: grey;
-	margin-top:  1.5rem;
+	margin-top:  1.5em;
 }
 
 input:not([type="file"]):not([type="radio"]):not([type="checkbox"]), select, textarea{
-	padding: 0 0.5rem;
+	padding: 0 0.5em;
 	background: rgb(235, 235, 235);
 	border: none;
 	border-bottom: solid black thin;
 }
 
 #autor > label > input, #autor select{
-	height: 2rem;
+	height: 2em;
 }
 
 input:not([type="file"]):not([type="radio"]):not([type="checkbox"]):focus, 
@@ -312,13 +314,13 @@ select:focus, select:active, select:hover, textarea:focus,textarea:active,textar
 
 button {
 	cursor: pointer;
-	font-size: 1rem;
+	font-size: 1em;
     background: #0060A0;
     color: white;
-    border-radius: 0.2rem;
-    height: 2rem;
-	padding: 0 1rem;
-	margin: 1rem 0;
+    border-radius: 0.2em;
+    height: 2em;
+	padding: 0 1em;
+	margin: 1em 0;
 	border-color: transparent;
 	-moz-box-shadow: 0 0 5px #000000;
     -webkit-box-shadow: 0 0 5px #000000;
