@@ -33,24 +33,10 @@ class Calculator {
         this.operator = op;
     }
 
-    commandTyped(key){
-        switch(key){
-            case "key-c":
-                this.reset();
-                break;
-            case "key-=":
-                this.calculate();
-                break;                
-            default:
-            break;
-        }
-    }
-
-
     calculate(){
         if(this.operand1 == "" || this.operand2 == "" || this.operator == ""){
             this.error();
-            return;
+            return false;
         }
         switch (this.operator) {
             case '+':
@@ -65,7 +51,7 @@ class Calculator {
             case '/':
                 if(this.operand1 == 0){
                     this.error();
-                    return;
+                    return false;
                 }
                 this.operand1 = this.operand2 / this.operand1;
                 break;
@@ -74,6 +60,7 @@ class Calculator {
         }
         this.operand2 = "";
         this.operator = "";
+        return true;
     }
 }
 /**
@@ -91,7 +78,16 @@ window.addEventListener('DOMContentLoaded', function() {
                 calculator.operatorTyped(event.target.value);
                 break;
             case "command":
-                calculator.commandTyped(event.target.id);
+                switch(event.target.id){
+                    case "key-c":
+                        calculator.reset();
+                        break;
+                    case "key-=":
+                        calculator.calculate();
+                        break;
+                    default:
+                        break;
+                }
                 break;
             default:
                 break;
@@ -106,7 +102,28 @@ window.addEventListener('DOMContentLoaded', function() {
  * Tests Scenarios
  */
 const testCalc = new Calculator();
-console.log(""/*TODO*/, "should be", 17);
-console.log(""/*TODO*/, "should be", 15);
-console.log(""/*TODO*/, "should be", 30);
-console.log(""/*TODO*/, "should be", true); // true = hasError
+
+testCalc.numberTyped(1);
+testCalc.numberTyped(1);
+testCalc.operatorTyped("+");
+testCalc.numberTyped(6);
+testCalc.calculate();
+console.log(testCalc.operand1, "should be", 17);
+
+testCalc.operatorTyped("-");
+testCalc.numberTyped(2);
+testCalc.calculate();
+console.log(testCalc.operand1, "should be", 15);
+
+testCalc.operatorTyped("*");
+testCalc.numberTyped(2);
+testCalc.calculate();
+console.log(testCalc.operand1, "should be", 30);
+
+testCalc.reset();
+testCalc.operatorTyped("*");
+testCalc.operatorTyped("-");
+testCalc.operatorTyped("+");
+testCalc.operatorTyped("/");
+testCalc.numberTyped(4);
+console.log(!testCalc.calculate(), "should be", true); // true = hasError
