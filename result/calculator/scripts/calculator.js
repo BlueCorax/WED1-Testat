@@ -34,10 +34,13 @@ class Calculator {
         this.operator = op;
     }
 
+    /*
+    * returns true on error
+    */
     calculate(){
         if(this.operand1 == "" || this.operand2 == "" || this.operator == ""){
             this.error();
-            return false;
+            return true;
         }
         switch (this.operator) {
             case '+':
@@ -52,7 +55,7 @@ class Calculator {
             case '/':
                 if(this.operand1 == 0){
                     this.error();
-                    return false;
+                    return true;
                 }
                 this.operand1 = this.operand2 / this.operand1;
                 break;
@@ -61,7 +64,7 @@ class Calculator {
         }
         this.operand2 = "";
         this.operator = "";
-        return true;
+        return false;
     }
 }
 /**
@@ -127,4 +130,4 @@ testCalc.operatorTyped("-");
 testCalc.operatorTyped("+");
 testCalc.operatorTyped("/");
 testCalc.numberTyped(4);
-console.log(!testCalc.calculate(), "should be", true); // true = hasError
+console.log(testCalc.calculate(), "should be", true); // true = hasError
