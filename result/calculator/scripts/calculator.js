@@ -2,9 +2,69 @@
  * core
  */
 class Calculator {
-    constructor() {
+    constructor(initialText) {
+        this.input = "";
+        this.output = "initialText";
+        this.operand1 = "";
+        this.operand2 = "";
+        this.operator = "";
+    }
+
+    setInput(input){
+        this.input = input;
+    }
+
+    getInput(){
+        return this.input;
+    }
+
+    setOutput(output){
+        this.output = output;
+    }
+
+    getOutput(){
+        return this.output;
+    }
+
+    calculate(){
+        switch (this.operator) {
+            case '+':
+                
+                break;
+            case '-':
+                
+                break;
+            case '*':
+                
+                break;
+            case '/':
+                
+                break;
+            default:
+                break;
+        }
+    }
+
+    checkInput(input){
 
     }
+
+    add(left, right){
+        return left + right;
+    }
+
+    remove(left, right){
+        return left - right;
+    }
+
+    divide(left, right){
+        return left / right;
+    } 
+    
+    multiply(left, right){
+        return left * right;
+    }
+
 }
 
 
@@ -12,8 +72,9 @@ class Calculator {
  * UI
  */
 window.addEventListener('DOMContentLoaded', function() {
-    const calculator = new Calculator();
-
+    const calculator = new Calculator("Hallo Welt");
+    calculator.displayInput();
+    calculator.displayOutput();
 });
 
 
