@@ -1,8 +1,9 @@
+'use strict';
 /**
  * core
  */
 class Calculator {
-    constructor(initialText) {
+    constructor() {
         this.reset();
     }
 
@@ -102,7 +103,7 @@ window.addEventListener('DOMContentLoaded', function() {
  * Tests Scenarios
  */
 const testCalc = new Calculator();
-
+var console = console; //only needed for validator
 testCalc.numberTyped(1);
 testCalc.numberTyped(1);
 testCalc.operatorTyped("+");
